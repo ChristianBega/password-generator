@@ -1,6 +1,38 @@
+
+//CREATING VARIABLES!!!
+
+//Step 1. Create variables to store an array of each password criteria. 
+    var numbersArr, upperArr, LowerArr, specialArr
+
+//Step 2. Create variable to store empty array for the selected criteria from the user input later.
+
+//Step 3. Create a variable to store a password length value from the user input later.
+
+//Creating collectCriteria function that will collect all of the users inputs.
+
+//step 1. prompt user with .confirm || t/f
+//step 2. prompt user to input password length || userLengthInput
+        //step 3. Create if statement to test if password lenght is greater than 8 and less than 128
+//step 4. Create varibles to collect user inputs for other criteria options || t/f .confirm
+        step 5. Create if statement to verify user selected atleast 1 criteria option. || if numbers, uppercase, lowercase, and specialChar are false EXIT!
+
+
+//Creating randomCharacter function that will randomly generate a char from an array
+
+//step 1. return a random letter using return 
+//step 2. create variable for generatedPassword
+//step 3. create for loop 
+        //init          condition          increment
+        i = 0      i < userLengthInput      i++
+        generatedPassword += randomCharacter(selectedCriteria.slice)
+
+
+
 //create a function called random and pass through selectedCriteria
+
+
 function randomElement (array) {
-// return a random letter from the array
+// return a random letter from the || array[Math.floor(Math.random() * array.length)]
     return array[Math.floor(Math.random() * array.length)]
 }
 

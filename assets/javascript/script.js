@@ -108,32 +108,32 @@ var collectCriteria = function () {
     }
     // Sorting criteria if true then push to selectedCriteria Array
     if (confirmNumbers === true) {
-      selectedCriteria.append(numbersArr);
+      selectedCriteria.push(numbersArr.toString());
     }
     if (confirmUpperCase === true) {
-      selectedCriteria.append(upperArr);
+      selectedCriteria.push(upperArr.toString());
     }
     if (confirmLowerCase === true) {
-      selectedCriteria.push(lowerArr);
+      selectedCriteria.push(lowerArr.toString());
     }
     if (confirmSpecialChar === true) {
-      selectedCriteria.push(specialArr);
+      selectedCriteria.push(specialArr.toString());
     }
-    // console.log(selectedCriteria);
   }
 };
 // Calling collectCriteria function
 collectCriteria();
+console.log(selectedCriteria);
+
+// Creating function to randomly select a char from the selectedCriteria array.
+var randomCharacter = function (selectedCriteria) {
+  return selectedCriteria[Math.floor(Math.random() * selectedCriteria)];
+
+};
+randomCharacter();
 
 var generatePassword = function () {
   var generatedPassword = "";
-
-  // console.log(userLengthInput);
-  console.log(selectedCriteria);
-  for (let i = 0; i < userLengthInput; i++) {
-    var test = Math.floor(Math.random() * selectedCriteria.slice);
-    console.log(test);
-  }
 };
 generatePassword();
 
