@@ -1,0 +1,17 @@
+//create a function called random and pass through selectedCriteria
+function randomElement (array) {
+// return a random letter from the array
+    return array[Math.floor(Math.random() * array.length)]
+}
+
+var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split(''),
+//result is a undefined variable that will collect generatedPassword
+    generatedPassword = "";
+
+    //initalize  condtion  increment
+    //i < passwordLength then increment
+for (var i = 0; i < 8; i++) {
+    //passwordLength += 
+    result += randomElement(characters)
+}
+console.log(result) //=> (random 8-character string)
